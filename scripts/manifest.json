@@ -1,0 +1,95 @@
+{
+	"name": "Vibe Check",
+	"short_name": "VibeCheck",
+	"start_url": "https://vibecheck.ch",
+	"id": "/",
+	"description": "Track your Happiness with Vibe Check and get Suggestions on how to improve it!",
+	"categories": ["health", "lifestyle", "utilities"],
+	"icons": [
+		{
+		"src": "https://vibecheck.ch/content/icon_192.png",
+		"type": "image/png",
+		"purpose": "maskable",
+		"sizes": "192x192"
+		},
+		{
+		"src": "https://vibecheck.ch/content/icon_384.png",
+		"type": "image/png",
+		"purpose": "maskable",
+		"sizes": "384x384"
+		},
+		{
+		"src": "https://vibecheck.ch/content/icon_768.png",
+		"type": "image/png",
+		"purpose": "maskable",
+		"sizes": "768x768"
+		},
+		{
+		"src": "https://vibecheck.ch/content/icon.svg",
+		"type": "image/svg",
+		"purpose": "maskable",
+		"sizes": "any"
+		},
+		{
+		"src": "https://vibecheck.ch/content/favicon_16.png",
+		"type": "image/png",
+		"purpose": "any",
+		"sizes": "16x16"
+		},
+		{
+		"src": "https://vibecheck.ch/content/favicon_192.png",
+		"type": "image/png",
+		"purpose": "any",
+		"sizes": "192x192"
+		},
+		{
+		"src": "https://vibecheck.ch/content/favicon_384.png",
+		"type": "image/png",
+		"purpose": "any",
+		"sizes": "384x384"
+		},
+		{
+		"src": "https://vibecheck.ch/content/favicon_768.png",
+		"type": "image/png",
+		"purpose": "any",
+		"sizes": "768x768"
+		},
+		{
+		"src": "https://vibecheck.ch/content/favicon.svg",
+		"type": "image/svg",
+		"purpose": "any",
+		"sizes": "any"
+		}
+	],
+	"screenshots": [
+		{
+		"src": "https://vibecheck.ch/content/screenshot.png",
+		"label": "Preview of Vibe Check on Mobile",
+		"type": "image/png",
+		"sizes": "960x1536"
+		},
+		{
+		"src": "https://vibecheck.ch/content/screenshot_wide.png",
+		"form_factor": "wide",
+		"label": "Preview of Vibe Check on Desktop",
+		"type": "image/png",
+		"sizes": "1536x960"
+		}
+	],
+	"shortcuts": [
+		{
+		"name": "Check your Vibe",
+		"url": "/"
+		},
+		{
+		"name": "View your History",
+		"url": "/"
+		}
+	],
+	"display_override": ["standalone", "fullscreen"],
+	"display": "minimal-ui",
+	"orientation": "natural",
+	"launch_handler": {"client_mode": "navigate-existing"},
+	"background_color": "#9ed",
+	"theme_color": "#9ed"
+}
