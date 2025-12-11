@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="initial-scale=1, user-scalable=no, viewport-fit=cover" />
-		
+
 		<meta name="mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="theme-color" content="#def" media="(prefers-color-scheme: light)" />
@@ -16,6 +16,7 @@
 		<link rel="preload" href="/content/checkbox.svg" />
 		<link rel="stylesheet" href="/styles/stylesheet.css" />
 		<link rel="manifest" href="/scripts/manifest.json" />
+
 		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 		<title>VibeCheck Dashboard</title>
@@ -29,9 +30,14 @@
 		<meta property="og:description" content="Track your Happiness with Vibe Check and get Suggestions on how to improve it!" />
 		<meta property="og:image" content="https://vibecheck.ch/content/brand.png" />
 	</head>
-<body>
-<h1>Dashboard</h1>
-<button id="logoutBtn">Log Out</button>
-<script src="scripts/auth.js"></script>
-</body>
+	<body>
+		<main>
+			<h1>VibeCheck</h1>
+			<section>
+				<h2>Dashboard</h2>
+				<button id="logout_button">Log Out</button>
+			</section>
+		</main>
+	<script src="scripts/auth.js"></script>
+	</body>
 </html>

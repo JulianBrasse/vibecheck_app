@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="initial-scale=1, user-scalable=no, viewport-fit=cover" />
-		
+
 		<meta name="mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="theme-color" content="#def" media="(prefers-color-scheme: light)" />
@@ -16,6 +16,7 @@
 		<link rel="preload" href="/content/checkbox.svg" />
 		<link rel="stylesheet" href="/styles/stylesheet.css" />
 		<link rel="manifest" href="/scripts/manifest.json" />
+
 		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 		<title>VibeCheck</title>
@@ -29,13 +30,18 @@
 		<meta property="og:description" content="Track your Happiness with Vibe Check and get Suggestions on how to improve it!" />
 		<meta property="og:image" content="https://vibecheck.ch/content/brand.png" />
 	</head>
-<body>
-<h1>Log In</h1>
-<input type="email" id="email" placeholder="Email" />
-<input type="password" id="password" placeholder="Password" />
-<button id="loginBtn">Log In</button>
-<button id="signupBtn">Sign Up</button>
-<p id="message"></p>
-<script src="scripts/auth.js"></script>
-</body>
+	<body>
+		<main>
+			<h1>VibeCheck</h1>
+			<section>
+				<h2>Log In / Sign Up</h2>
+				<input type="email" id="email_input" placeholder="Email" />
+				<input type="password" id="password_input" placeholder="Password" />
+				<button id="login_button">Log In</button>
+				<button id="signup_button">Sign Up</button>
+				<p id="message_text"></p>
+			</section>
+		</main>
+	<script src="scripts/auth.js"></script>
+	</body>
 </html>
