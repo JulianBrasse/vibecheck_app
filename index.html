@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-CH">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1, user-scalable=no, viewport-fit=cover" />
+		
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="theme-color" content="#def" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#123" media="(prefers-color-scheme: dark)" />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link rel="canonical" href="https://vibecheck.ch" />
+		<link rel="icon" href="/content/favicon.svg" />
+		<link rel="apple-touch-icon" href="/content/icon_768.png" />
+		<link rel="preload" href="/content/checkbox.svg" />
+		<link rel="stylesheet" href="/styles/stylesheet.css" />
+		<link rel="manifest" href="/scripts/manifest.json" />
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+		<title>VibeCheck</title>
+		<meta name="application-name" content="VibeCheck" />
+		<meta name="description" content="Track your Happiness with Vibe Check and get Suggestions on how to improve it!" />
+		<meta name="keywords" content="Vibe, Happy, Mood, Smile, Joy, Check, Stats, Counter, Meter, Tracker, Diary, Journal, Wellness" />
+
+		<meta property="og:url" content="https://vibecheck.ch" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="VibeCheck" />
+		<meta property="og:description" content="Track your Happiness with Vibe Check and get Suggestions on how to improve it!" />
+		<meta property="og:image" content="https://vibecheck.ch/content/brand.png" />
+	</head>
+<body>
+<h1>Log In</h1>
+<input type="email" id="email" placeholder="Email" />
+<input type="password" id="password" placeholder="Password" />
+<button id="loginBtn">Log In</button>
+<button id="signupBtn">Sign Up</button>
+<p id="message"></p>
+<script src="scripts/auth.js"></script>
+</body>
+</html>
