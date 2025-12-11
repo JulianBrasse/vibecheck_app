@@ -158,6 +158,19 @@ td {
 	border-radius: 0.5vh;
 }
 
+square {
+	margin-left: 1vh;
+	width: 3vh;
+	height: 3vh;
+	border: 1.5px solid var(--content);
+	border-radius: 0.5vh; 
+}
+
+.legend {
+	margin-top: 1vh;
+	align-items: center;
+}
+
 @media screen and (min-width: 600px) {
 	button:hover, input:hover {
 		background-color: var(--fill);
