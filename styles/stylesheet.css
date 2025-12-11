@@ -115,105 +115,14 @@ div {
 	flex-direction: column;
 }
 
-label, legend {
-	margin-bottom: 0.5vh;
-}
-
 input {
 	background-color: var(--fill);
 	cursor: pointer;
 }
 
-input[type="text"], input[type="submit"] {
+input[type="email"], input[type="password"] {
 	padding: 1vh;
 	border-radius: 1vh;
-}
-
-input[type="color"] {
-	padding: 0.75vh;
-	width: unset;
-	height: 10vh;
-	border-radius: 1vh;
-}
-
-input[type="color"]::-webkit-color-swatch {
-	border: unset;
-	border-radius: 0.5vh;
-}
-
-input[type="color"]::-webkit-color-swatch-wrapper {
-	padding: unset;
-}
-
-input[type="checkbox"] {
-	margin: 0 0.5vh 0.5vh 0;
-	width: 2vh;
-	height: 2vh;
-	border-radius: 0.25vh;
-	appearance: none;
-}
-
-input[type="checkbox"]:checked {
-	background-image: url("/content/checkbox.svg");
-	background-color: var(--accent);
-}
-
-input:last-of-type {
-	margin-bottom: 1vh;
-}
-
-input[type="submit"] {
-	margin: unset;
-}
-
-table {
-	padding: 1vh;
-	border: 1px solid var(--content);
-	border-spacing: 1vh;
-	border-radius: 1vh;
-	background-color: var(--tertiary);
-}
-
-table:not(:last-of-type) {
-	margin-right: 2vh;
-}
-
-th {
-	text-align: right;
-	font-weight: 400;
-	font-family: Chivo Mono, ui-monospace, monospace;
-}
-
-thead th {
-	font-size: 2.5vh;
-	font-weight: revert;
-	font-family: revert;
-}
-
-td {
-	padding: 1.5vh;
-	border: 1px solid var(--content);
-	border-radius: 1vh;
-}
-
-.logo {
-	display: flex;
-	align-items: center;
-	text-decoration: none;
-	& img {
-		margin-right: 2vh;
-		width: 4vh;
-		aspect-ratio: 1 / 1;
-	}
-	& h1 {
-		display: none;
-	}
-}
-
-.history {
-	flex-direction: row;
-	overflow: scroll;
-	scrollbar-width: none;
 }
 
 @media screen and (min-width: 600px) {
