@@ -31,10 +31,14 @@
 		<meta property="og:image" content="https://vibecheck.ch/content/brand.png" />
 	</head>
 	<body>
-		<main>
+		<header>
+			<img src="/content/symbol.svg" alt="Vibey our smiley face icon.">
 			<h1>VibeCheck</h1>
-			<img src="/content/symbol.svg" alt="Vibey our smiley face icon." height="3.5vh">
-			<section>
+			<button commandfor="auth_box" command="show-modal">Log In / Sign Up</button>
+
+		</header>
+		<main>
+			<dialog id="auth_box" closedby="closerequest">
 				<h3>Log In / Sign Up</h3>
 				<div>
 					<input type="email" id="email_input" placeholder="Email" />
@@ -42,8 +46,9 @@
 				</div>
 					<button id="login_button">Log In</button>
 					<button id="signup_button">Sign Up</button>
+					<button commandfor="auth_box" command="close">Cancel</button>
 					<p id="message_text"></p>
-			</section>
+			</dialog>
 		</main>
 	<script src="scripts/auth.js"></script>
 	</body>
