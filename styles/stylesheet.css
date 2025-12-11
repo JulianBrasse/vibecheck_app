@@ -6,9 +6,8 @@
 :root {
 	font-family: Archivo, ui-sans-serif, system-ui, sans-serif;
 	--accent: #9ed;
-	--primary: #9ed;
-	--secondary: #def;
-	--tertiary: #ecf;
+	--primary: #def;
+	--secondary: #ecf;
 	--content: #000;
 	--fill: #fff;
 	overscroll-behavior: none;
@@ -19,7 +18,6 @@
 :root {
 	--primary: #012;
 	--secondary: #123;
-	--tertiary: #012;
 	--content: #fff;
 	--fill: #666;
 	}
@@ -28,7 +26,7 @@
 body {
 	height: 100vh;
 	accent-color: var(--accent);
-	background-color: var(--secondary);
+	background-color: var(--fill);
 }
 
 * {
@@ -80,8 +78,9 @@ header {
 	padding: 2vh;
 	display: flex;
 	align-items: center;
-	background-color: var(--secondary);
-	
+	justify-content: space-between;
+	background-color: var(--primary);
+
 	& img {
 		margin-right: 1vh;
 		height: 3.5vh;
@@ -92,20 +91,18 @@ section {
 	margin-bottom: 2vh;
 	padding: 2vh;
 	border-radius: 2vh;
-	background-color: var(--tertiary);
+	background-color: var(--secondary);
 }
 
 dialog {
 	margin: auto;
 	padding: 2vh;
 	border-radius: 2vh;
-	background-color: var(--tertiary);
+	background-color: var(--secondary);
 }
 
 div {
 	display: flex;
-	flex-direction: column;
-	align-items: baseline;
 }
 
 input {
@@ -124,8 +121,38 @@ button {
 	cursor: pointer;
 }
 
+table {
+	padding: 1vh;
+	border: 1px solid var(--content);
+	border-spacing: 1vh;
+	border-radius: 1vh;
+	background-color: var(--tertiary);
+}
+
+table:not(:last-of-type) {
+	margin-right: 2vh;
+}
+
+th {
+	text-align: right;
+	font-weight: 400;
+	font-family: Chivo Mono, ui-monospace, monospace;
+}
+
+thead th {
+	font-size: 2.5vh;
+	font-weight: revert;
+	font-family: revert;
+}
+
+td {
+	padding: 1.5vh;
+	border: 1px solid var(--content);
+	border-radius: 1vh;
+}
+
 @media screen and (min-width: 600px) {
 	button:hover, input:hover {
-		background-color: var(--secondary);
+		background-color: var(--fill);
 	}
 }
