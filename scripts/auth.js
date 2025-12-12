@@ -3,9 +3,9 @@ import { supabase } from "/scripts/supabase.js";
 const email_input = document.getElementById("email_input");
 const password_input = document.getElementById("password_input");
 const name_input = document.getElementById("name_input");
-const sign_in_button = document.getElementById("login_button");
-const sign_up_button = document.getElementById("signup_button");
-const sign_out_button = document.getElementById("logout_button");
+const sign_in_button = document.getElementById("sign_in_button");
+const sign_up_button = document.getElementById("sign_up_button");
+const sign_out_button = document.getElementById("sign_out_button");
 const message_text = document.getElementById("message_text");
 
 async function checkSessionStatus() {
