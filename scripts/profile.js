@@ -9,7 +9,8 @@ const name_text = document.getElementById("name_text");
 async function get_user_name() {
 	const { data: { user } } = await supabase.auth.getUser();
 	display_name = user?.user_metadata?.full_name;
-	console.log(display_name);
+	console.log( "supabase full_name:" + user?.user_metadata?.full_name);
+	console.log("variable display_name: " + display_name);
 	name_text.innerText = display_name || "user";
 }
 
