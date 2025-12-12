@@ -25,13 +25,13 @@
 		
 		<title>VibeCheck Dashboard</title>
 		<meta name="application-name" content="VibeCheck" />
-		<meta name="description" content="Track your Happiness with Vibe Check and get Suggestions on how to improve it!" />
+		<meta name="description" content="Track your happiness with VibeCheck and get suggestions on how to improve it!" />
 		<meta name="keywords" content="Vibe, Happy, Mood, Smile, Joy, Check, Stats, Counter, Meter, Tracker, Diary, Journal, Wellness" />
 
 		<meta property="og:url" content="https://vibecheck.ch" />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="VibeCheck" />
-		<meta property="og:description" content="Track your Happiness with Vibe Check and get Suggestions on how to improve it!" />
+		<meta property="og:description" content="Track your happiness with VibeCheck and get suggestions on how to improve it!" />
 		<meta property="og:image" content="https://vibecheck.ch/content/brand.png" />
 	</head>
 	<body>
@@ -41,7 +41,7 @@
 				<h1 class="name">VibeCheck</h1>
 			</div>
 			<nav>
-				<button class="button" commandfor="profile_dialog" command="show-modal">Profile</button>
+				<button class="button" id="profile_open_button" commandfor="profile_dialog" command="show-modal">Profile</button>
 				<button class="button" id="sign_out_button">Sign Out</button>
 			</nav>
 		</header>
@@ -191,16 +191,16 @@
 		</main>
 		<dialog id="profile_dialog" closedby="closerequest">
 			<h3>Profile</h3>
-			<output id="message_text"></output>
+			<output id="info_box"></output>
 			<div class="flex-column">
 				<input type="email" id="email_input" placeholder="Email" />
 				<input type="password" id="password_input" placeholder="Password" />
 				<input type="text" id="name_input" placeholder="First Name" />
 			</div>
 			<div>
-				<button class="button" id="save_button">Save</button>
+				<button class="button" id="profile_save_button">Save</button>
 			</div>
-			<button class="close" commandfor="profile_dialog" command="close">Close</button>
+			<button class="close" id="profile_close_button" commandfor="profile_dialog" command="close">Close</button>
 		</dialog>
 	</body>
 </html>

@@ -6,7 +6,7 @@ const name_input = document.getElementById("name_input");
 const sign_in_button = document.getElementById("sign_in_button");
 const sign_up_button = document.getElementById("sign_up_button");
 const sign_out_button = document.getElementById("sign_out_button");
-const message_text = document.getElementById("message_text");
+const info_box = document.getElementById("info_box");
 
 async function checkSessionStatus() {
 	const { data: { session } } = await supabase.auth.getSession();
@@ -41,14 +41,14 @@ async function signUp() {
 	});
 
 	if (error) {
-		message_text.innerText = error.message;
-		message_text.style.display = "flex";
-		setTimeout(() => {message_text.style.display = "none";}, 5000);
+		info_box.innerText = error.message;
+		info_box.style.display = "flex";
+		setTimeout(() => {info_box.style.display = "none";}, 5000);
 	} else {
-		message_text.innerText = "Success!";
-		message_text.style.display = "flex";
+		info_box.innerText = "Success!";
+		info_box.style.display = "flex";
 		checkSessionStatus();
-		setTimeout(() => {message_text.style.display = "none";}, 5000);
+		setTimeout(() => {info_box.style.display = "none";}, 5000);
 	}
 }
 
@@ -61,9 +61,9 @@ async function signIn() {
 	});
 
 	if (error) {
-		message_text.innerText = error.message;
-		message_text.style.display = "flex";
-		setTimeout(() => {message_text.style.display = "none";}, 5000);
+		info_box.innerText = error.message;
+		info_box.style.display = "flex";
+		setTimeout(() => {info_box.style.display = "none";}, 5000);
 	} else {
 		window.location.href = "dashboard.html";
 	}	

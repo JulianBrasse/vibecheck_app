@@ -20,18 +20,19 @@
 
 		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 		<script type="module" src="/scripts/supabase.js" defer></script>
+		<script type="module" src="/scripts/main.js" defer></script>
 		<script type="module" src="/scripts/auth.js" defer></script>
 		<script type="module" src="/scripts/profile.js" defer></script>
 		
 		<title>VibeCheck</title>
 		<meta name="application-name" content="VibeCheck" />
-		<meta name="description" content="Track your Happiness with Vibe Check and get Suggestions on how to improve it!" />
+		<meta name="description" content="Track your happiness with VibeCheck and get suggestions on how to improve it!" />
 		<meta name="keywords" content="Vibe, Happy, Mood, Smile, Joy, Check, Stats, Counter, Meter, Tracker, Diary, Journal, Wellness" />
 
 		<meta property="og:url" content="https://vibecheck.ch" />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="VibeCheck" />
-		<meta property="og:description" content="Track your Happiness with Vibe Check and get Suggestions on how to improve it!" />
+		<meta property="og:description" content="Track your happiness with VibeCheck and get suggestions on how to improve it!" />
 		<meta property="og:image" content="https://vibecheck.ch/content/brand.png" />
 	</head>
 	<body>
@@ -41,19 +42,19 @@
 				<h1>VibeCheck</h1>
 			</div>
 			<nav>
-				<button class="button" commandfor="auth_dialog" command="show-modal">Enter Dashboard</button>
+				<button class="button" id="auth_open_button" commandfor="auth_dialog" command="show-modal">Sign In</button>
 			</nav>
 		</header>
 		<main>
 			<section>
-				<p>Track your Happiness with Vibe Check and get Suggestions on how to improve it!</p>
+				<p>Track your happiness with VibeCheck and get suggestions on how to improve it!</p>
 			</section>
 		</main>
 		<footer>
 		</footer>
-		<dialog id="auth_dialog" closedby="closerequest" open>
+		<dialog id="auth_dialog" closedby="closerequest">
 			<h3>Dashboard</h3>
-			<output id="message_text"></output>
+			<output id="info_box"></output>
 			<div class="flex-column">
 				<input type="email" id="email_input" placeholder="Email" />
 				<input type="password" id="password_input" placeholder="Password" />
@@ -63,7 +64,7 @@
 				<button class="button" id="sign_in_button">Sign In</button>
 				<button class="button" id="sign_up_button">Sign Up</button>
 			</div>
-			<button class="close" commandfor="auth_dialog" command="close">Close</button>
+			<button class="close" id="auth_close_button" commandfor="auth_dialog" command="close">Close</button>
 		</dialog>
 	</body>
 </html>

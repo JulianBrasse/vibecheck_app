@@ -3,9 +3,9 @@ import { supabase } from "/scripts/supabase.js";
 const email_input = document.getElementById("email_input");
 const password_input = document.getElementById("password_input");
 const name_input = document.getElementById("name_input");
-const save_button = document.getElementById("save_button");
+const save_button = document.getElementById("profile_save_button");
 const name_text = document.getElementById("name_text");
-const message_text = document.getElementById("message_text");
+const info_box = document.getElementById("info_box");
 
 async function getProfile() {
 	const { data: { user } } = await supabase.auth.getUser();
@@ -34,13 +34,13 @@ async function setProfile() {
 		});
 
 		if (error) {
-			message_text.innerText = error.message;
-			message_text.style.display = "flex";
-			setTimeout(() => {message_text.style.display = "none";}, 5000);
+			info_box.innerText = error.message;
+			info_box.style.display = "flex";
+			setTimeout(() => {info_box.style.display = "none";}, 5000);
 		} else {
-			message_text.innerText = "Success!";
-			message_text.style.display = "flex";
-			setTimeout(() => {message_text.style.display = "none";}, 5000);
+			info_box.innerText = "Success!";
+			info_box.style.display = "flex";
+			setTimeout(() => {info_box.style.display = "none";}, 5000);
 		}
 	}
 
@@ -52,13 +52,13 @@ async function setProfile() {
 		password_input.value = "";
 
 		if (error) {
-			message_text.innerText = error.message;
-			message_text.style.display = "flex";
-			setTimeout(() => {message_text.style.display = "none";}, 5000);
+			info_box.innerText = error.message;
+			info_box.style.display = "flex";
+			setTimeout(() => {info_box.style.display = "none";}, 5000);
 		} else {
-			message_text.innerText = "Success!";
-			message_text.style.display = "flex";
-			setTimeout(() => {message_text.style.display = "none";}, 5000);
+			info_box.innerText = "Success!";
+			info_box.style.display = "flex";
+			setTimeout(() => {info_box.style.display = "none";}, 5000);
 		}
 	}
 
@@ -70,13 +70,13 @@ async function setProfile() {
 		});
 
 		if (error) {
-			message_text.innerText = error.message;
-			message_text.style.display = "flex";
-			setTimeout(() => {message_text.style.display = "none";}, 5000);
+			info_box.innerText = error.message;
+			info_box.style.display = "flex";
+			setTimeout(() => {info_box.style.display = "none";}, 5000);
 		} else {
-			message_text.innerText = "Success!";
-			message_text.style.display = "flex";
-			setTimeout(() => {message_text.style.display = "none";}, 5000);
+			info_box.innerText = "Success!";
+			info_box.style.display = "flex";
+			setTimeout(() => {info_box.style.display = "none";}, 5000);
 		}
 
 		getProfile();
