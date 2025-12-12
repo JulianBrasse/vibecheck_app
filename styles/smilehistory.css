@@ -8,10 +8,6 @@ table {
 	border-radius: 1vh;
 }
 
-table:not(:last-of-type) {
-	margin-right: 2vh;
-}
-
 th {
 	text-align: right;
 	font-weight: 400;
