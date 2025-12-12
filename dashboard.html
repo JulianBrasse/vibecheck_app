@@ -49,6 +49,10 @@
 			<h2>Good morning <span id="name_text"></span>!</h2>
 			<section>
 				<h3>DailyVibe</h3>
+					<div class="flex-column">
+						<label for="happiness_scale">How happy are you?</label>
+						<input type="range" id="happiness_scale" name="happiness_scale" min="0" max="10">
+					</div>
 				<button class="button">Submit</button>
 			</section>
 			<section>
@@ -58,134 +62,41 @@
 			<section>
 				<h3>SmileHistory</h3>
 				<div class="history">
-					<table>
-						<thead><th colspan="7">January</th></thead>
-						<tr><th>Mon</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Tue</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Wed</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Thu</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Fri</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sat</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sun</th><td/><td/><td/><td/><td/><td/></tr>
-					</table>
-					<table>
-						<thead><th colspan="7">February</th></thead>
-						<tr><th>Mon</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Tue</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Wed</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Thu</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Fri</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sat</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sun</th><td/><td/><td/><td/><td/><td/></tr>
-					</table>
-					<table>
-						<thead><th colspan="7">March</th></thead>
-						<tr><th>Mon</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Tue</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Wed</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Thu</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Fri</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sat</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sun</th><td/><td/><td/><td/><td/><td/></tr>
-					</table>
-					<table>
-						<thead><th colspan="7">April</th></thead>
-						<tr><th>Mon</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Tue</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Wed</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Thu</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Fri</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sat</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sun</th><td/><td/><td/><td/><td/><td/></tr>
-					</table>
-					<table>
-						<thead><th colspan="7">May</th></thead>
-						<tr><th>Mon</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Tue</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Wed</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Thu</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Fri</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sat</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sun</th><td/><td/><td/><td/><td/><td/></tr>
-					</table>
-					<table>
-						<thead><th colspan="7">June</th></thead>
-						<tr><th>Mon</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Tue</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Wed</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Thu</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Fri</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sat</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sun</th><td/><td/><td/><td/><td/><td/></tr>
-					</table>
-					<table>
-						<thead><th colspan="7">July</th></thead>
-						<tr><th>Mon</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Tue</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Wed</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Thu</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Fri</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sat</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sun</th><td/><td/><td/><td/><td/><td/></tr>
-					</table>
-					<table>
-						<thead><th colspan="7">August</th></thead>
-						<tr><th>Mon</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Tue</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Wed</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Thu</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Fri</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sat</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sun</th><td/><td/><td/><td/><td/><td/></tr>
-					</table>
-					<table>
-						<thead><th colspan="7">September</th></thead>
-						<tr><th>Mon</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Tue</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Wed</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Thu</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Fri</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sat</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sun</th><td/><td/><td/><td/><td/><td/></tr>
-					</table>
-					<table>
-						<thead><th colspan="7">October</th></thead>
-						<tr><th>Mon</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Tue</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Wed</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Thu</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Fri</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sat</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sun</th><td/><td/><td/><td/><td/><td/></tr>
-					</table>
-					<table>
-						<thead><th colspan="7">November</th></thead>
-						<tr><th>Mon</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Tue</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Wed</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Thu</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Fri</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sat</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sun</th><td/><td/><td/><td/><td/><td/></tr>
-					</table>
-					<table>
-						<thead><th colspan="7">December</th></thead>
-						<tr><th>Mon</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Tue</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Wed</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Thu</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Fri</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sat</th><td/><td/><td/><td/><td/><td/></tr>
-						<tr><th>Sun</th><td/><td/><td/><td/><td/><td/></tr>
-					</table>
+					<grid id="grid-2026">2026
+						<row id="row-mon">Mon<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-tue">Tue<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-wed">Wed<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-thu">Thu<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-fri">Fri<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-sat">Sat<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-sun">Sun<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+					</grid>
+					<grid id="grid-2025">2025
+						<row id="row-mon">Mon<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-tue">Tue<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-wed">Wed<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-thu">Thu<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-fri">Fri<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-sat">Sat<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-sun">Sun<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+					</grid>
+					<grid id="grid-2024">2024
+						<row id="row-mon">Mon<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-tue">Tue<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-wed">Wed<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-thu">Thu<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-fri">Fri<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-sat">Sat<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+						<row id="row-sun">Sun<day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day><day></day></row>
+					</grid>
 				</div>
 				<div class="legend">Scale:
-					<square class="level-1" title="0% Happy"></square>
-					<square style="background-color: var(--level-2)" title="20% Happy"></square>
-					<square style="background-color: var(--level-3)" title="40% Happy"></square>
-					<square style="background-color: var(--level-4);" title="60% Happy"></square>
-					<square style="background-color: var(--level-5);" title="80% Happy"></square>
-					<square style="background-color: var(--level-6);" title="100% Happy"></square>
+					<day class="level-1"></day>
+					<day class="level-2"></day>
+					<day class="level-3"></day>
+					<day class="level-4"></day>
+					<day class="level-5"></day>
+					<day class="level-6"></day>
 				</div>
 			</section>
 		</main>

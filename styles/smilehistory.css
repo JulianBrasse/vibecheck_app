@@ -1,50 +1,149 @@
 /* Order: @import, :root, *, Elements, Classes, IDs, Attributes, Selectors, Nesting Selectors, Pseudo-Elements, Pseudo-Classes, At-Rules */
 /* Order: Position, Size, Shape, Color, Function */
 
-table {
-	padding: 1vh;
-	border: 1.5px solid var(--content);
-	border-spacing: 1vh;
+grid {
+	padding: 2vh;
+	background-color: white;
 	border-radius: 1vh;
-    background-color: var(--fill);
-    scroll-snap-align: start;
+	gap: 0.5vh;
+	display: flex;
+	flex-direction: column;
+	font-family: Chivo Mono;
+	font-weight: bold;
 }
 
-th {
-	text-align: right;
-	font-weight: 400;
-	font-family: Chivo Mono, ui-monospace, monospace;
+row {
+	display: flex;
+	gap: 0.5vh;
+	font-family: 'Chivo Mono';
+	font-weight: normal;
 }
 
-thead th {
-	font-size: 2.5vh;
-	font-weight: revert;
-	font-family: revert;
-}
-
-td {
-	padding: 1.5vh;
+day {
+	height: 2vh;
+	width: 2vh;
+	display: flex;
 	border: 1.5px solid var(--content);
 	border-radius: 0.5vh;
+	box-sizing: content-box;
+
+	&::before {
+		content: "Empty";
+		position: absolute;
+		transform: translateX(1.5vh) translateY(1.5vh);
+		padding: 1vh;
+		display: none;
+		border-radius: 1vh;
+		color: var(--fill);
+		background-color: var(--content);
+	}
 }
 
-square {
-	width: 3vh;
-	height: 3vh;
-	border: 1.5px solid var(--content);
-	border-radius: 0.5vh; 
+day:hover::before {
+	display: flex;
+}
+
+#grid-2026 #row-mon day:nth-child(-n + 1),
+#grid-2026 #row-tue day:nth-child(-n + 1),
+#grid-2026 #row-wed day:nth-child(-n + 1),
+#grid-2026 #row-fri day:nth-last-child(-n + 1),
+#grid-2026 #row-sat day:nth-last-child(-n + 1),
+#grid-2026 #row-sun day:nth-last-child(-n + 1) {
+	background-color: #0003;
+	border-color:#0000;
+
+	&:hover::before {
+		display: none;
+	}
+}
+
+#grid-2025 #row-mon day:nth-child(-n + 1),
+#grid-2025 #row-tue day:nth-child(-n + 1),
+#grid-2025 #row-thu day:nth-last-child(-n + 1),
+#grid-2025 #row-fri day:nth-last-child(-n + 1),
+#grid-2025 #row-sat day:nth-last-child(-n + 1),
+#grid-2025 #row-sun day:nth-last-child(-n + 1) {
+	background-color: #0003;
+	border-color:#0000;
+
+	&:hover::before {
+		display: none;
+	}
+}
+
+#grid-2024 #row-wed day:nth-last-child(-n + 1),
+#grid-2024 #row-thu day:nth-last-child(-n + 1),
+#grid-2024 #row-fri day:nth-last-child(-n + 1),
+#grid-2024 #row-sat day:nth-last-child(-n + 1),
+#grid-2024 #row-sun day:nth-last-child(-n + 1) {
+	background-color: #0003;
+	border-color:#0000;
+
+	&:hover::before {
+		display: none;
+	}
 }
 
 .history {
 	overflow: scroll;
-    scroll-snap-type: x mandatory;
+	scroll-snap-type: x mandatory;
 }
 
 .legend {
 	align-items: center;
-    font-family: Chivo Mono, ui-monospace, monospace;
+	font-family: Chivo Mono, ui-monospace, monospace;
 }
 
 .level-1 {
-    background-color: var(--level-1);
+	background-color: var(--level-1);
+
+	&::before {
+		content: "Happiness Level 0%";
+		color: var(--level-1);
+	}
+}
+
+.level-2 {
+	background-color: var(--level-2);
+
+	&::before {
+		content: "Happiness Level 20%";
+		color: var(--level-2);
+	}
+}
+
+.level-3 {
+	background-color: var(--level-3);
+
+	&::before {
+		content: "Happiness Level 40%";
+		color: var(--level-3);
+	}
+}
+
+.level-4 {
+	background-color: var(--level-4);
+
+	&::before {
+		content: "Happiness Level 60%";
+		color: var(--level-4);
+	}
+}
+
+.level-5 {
+	background-color: var(--level-5);
+
+	&::before {
+		content: "Happiness Level 80%";
+		color: var(--level-5);
+	}
+}
+
+.level-6 {
+	background-color: var(--level-6);
+
+	&::before {
+		content: "Happiness Level 100%";
+		color: var(--level-6);
+	}
 }
