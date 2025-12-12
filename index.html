@@ -13,12 +13,12 @@
 		<link rel="canonical" href="https://vibecheck.ch" />
 		<link rel="icon" href="/content/favicon.svg" />
 		<link rel="apple-touch-icon" href="/content/icon_768.png" />
-		<link rel="preload" href="/content/checkbox.svg" />
-		<link rel="stylesheet" href="/styles/stylesheet.css" />
 		<link rel="manifest" href="/scripts/manifest.json" />
 
-		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+		<link rel="stylesheet" href="/styles/main.css" />
+		<link rel="stylesheet" href="/styles/smilehistory.css" />
 
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 		<script type="module" src="/scripts/supabase.js" defer></script>
 		<script type="module" src="/scripts/auth.js" defer></script>
 		<script type="module" src="/scripts/profile.js" defer></script>
@@ -36,19 +36,19 @@
 	</head>
 	<body>
 		<header>
-			<div class="brand">
-				<img src="/content/symbol.svg" alt="Vibey our smiley face icon.">
+			<div>
+				<img class="logo" src="/content/symbol.svg" alt="Vibey our smiley face icon.">
 				<h1>VibeCheck</h1>
 			</div>
 			<nav>
-				<button commandfor="auth_box" command="show-modal">Enter Dashboard</button>
+				<button commandfor="auth_dialog" command="show-modal">Enter Dashboard</button>
 			</nav>
 		</header>
 		<main>
 		</main>
 		<footer>
 		</footer>
-		<dialog id="auth_box" closedby="closerequest">
+		<dialog id="auth_dialog" closedby="closerequest">
 			<h3>Dashboard</h3>
 			<output id="message_text"></output>
 			<div class="flex-column">
@@ -60,7 +60,7 @@
 				<button id="sign_in_button">Sign In</button>
 				<button id="sign_up_button">Sign Up</button>
 			</div>
-			<button class="close" commandfor="auth_box" command="close">Close</button>
+			<button class="close" commandfor="auth_dialog" command="close">Close</button>
 		</dialog>
 	</body>
 </html>

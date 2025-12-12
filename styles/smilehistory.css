@@ -1,0 +1,39 @@
+/* Order: @import, :root, *, Elements, Classes, IDs, Attributes, Selectors, Nesting Selectors, Pseudo-Elements, Pseudo-Classes, At-Rules */
+/* Order: Position, Size, Shape, Color, Function */
+
+table {
+	padding: 1vh;
+	border: 1.5px solid var(--content);
+	border-spacing: 1vh;
+	border-radius: 1vh;
+}
+
+table:not(:last-of-type) {
+	margin-right: 2vh;
+}
+
+th {
+	text-align: right;
+	font-weight: 400;
+	font-family: Chivo Mono, ui-monospace, monospace;
+}
+
+thead th {
+	font-size: 2.5vh;
+	font-weight: revert;
+	font-family: revert;
+}
+
+td {
+	padding: 1.5vh;
+	border: 1.5px solid var(--content);
+	border-radius: 0.5vh;
+}
+
+square {
+	margin-left: 1vh;
+	width: 3vh;
+	height: 3vh;
+	border: 1.5px solid var(--content);
+	border-radius: 0.5vh; 
+}

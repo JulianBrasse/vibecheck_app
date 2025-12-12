@@ -13,16 +13,16 @@
 		<link rel="canonical" href="https://vibecheck.ch" />
 		<link rel="icon" href="/content/favicon.svg" />
 		<link rel="apple-touch-icon" href="/content/icon_768.png" />
-		<link rel="preload" href="/content/checkbox.svg" />
-		<link rel="stylesheet" href="/styles/stylesheet.css" />
 		<link rel="manifest" href="/scripts/manifest.json" />
 
-		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+		<link rel="stylesheet" href="/styles/main.css" />
+		<link rel="stylesheet" href="/styles/smilehistory.css" />
 
+		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 		<script type="module" src="/scripts/supabase.js" defer></script>
 		<script type="module" src="/scripts/auth.js" defer></script>
 		<script type="module" src="/scripts/profile.js" defer></script>
-
+		
 		<title>VibeCheck Dashboard</title>
 		<meta name="application-name" content="VibeCheck" />
 		<meta name="description" content="Track your Happiness with Vibe Check and get Suggestions on how to improve it!" />
@@ -37,10 +37,11 @@
 	<body>
 		<header>
 			<div class="brand">
-				<img src="/content/symbol.svg" alt="Vibey our smiley face icon.">
+				<img class="logo" src="/content/symbol.svg" alt="Vibey our smiley face icon.">
 				<h1>VibeCheck</h1>
 			</div>
 			<nav>
+				<button commandfor="profile_dialog" command="show-modal">Profile</button>
 				<button id="sign_out_button">Exit Dashboard</button>
 			</nav>
 		</header>
@@ -99,5 +100,18 @@
 				</div>
 			</section>
 		</main>
+		<dialog id="profile_dialog" closedby="closerequest">
+			<h3>Profile</h3>
+			<output id="message_text"></output>
+			<div class="flex-column">
+				<input type="email" id="email_input" placeholder="Email" />
+				<input type="password" id="password_input" placeholder="Password" />
+				<input type="text" id="name_input" placeholder="First Name" />
+			</div>
+			<div>
+				<button id="save_button">Save</button>
+			</div>
+			<button class="close" commandfor="profile_dialog" command="close">Close</button>
+		</dialog>
 	</body>
 </html>
