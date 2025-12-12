@@ -49,6 +49,7 @@ body {
 	outline: unset;
 	font-size: 2vh;
 	font-family: Archivo, ui-sans-serif, system-ui, sans-serif;
+	appearance: unset;
 	text-decoration: unset;
 	box-sizing: border-box;
 	color: var(--content);
@@ -160,7 +161,6 @@ input {
 }
 
 input[type="range"]:hover {
-	padding: 0vh;
 	background-color: var(--fill);
 }
 
