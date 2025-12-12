@@ -12,8 +12,8 @@ async function getProfile() {
 	const email = user?.email;
 	const name = user?.user_metadata?.full_name;
 
-	email_input.setAttribute("placeholder", email);
-	name_input.setAttribute("placeholder", name);
+	email_input.value = email;
+	name_input.value = name;
 
 	name_text.innerText = name || "user";
 }
@@ -30,8 +30,12 @@ async function setProfile() {
 
 		if (error) {
 			message_text.innerText = error.message;
+			message_text.style.display = "flex";
+			setTimeout(() => {message_text.style.display = "none";}, 5000);
 		} else {
 			message_text.innerText = "Success!";
+			message_text.style.display = "flex";
+			setTimeout(() => {message_text.style.display = "none";}, 5000);
 		}
 	}
 
@@ -40,10 +44,16 @@ async function setProfile() {
 			password: password
 		});
 
+		password_input.value = "";
+
 		if (error) {
 			message_text.innerText = error.message;
+			message_text.style.display = "flex";
+			setTimeout(() => {message_text.style.display = "none";}, 5000);
 		} else {
 			message_text.innerText = "Success!";
+			message_text.style.display = "flex";
+			setTimeout(() => {message_text.style.display = "none";}, 5000);
 		}
 	}
 
@@ -56,8 +66,12 @@ async function setProfile() {
 
 		if (error) {
 			message_text.innerText = error.message;
+			message_text.style.display = "flex";
+			setTimeout(() => {message_text.style.display = "none";}, 5000);
 		} else {
 			message_text.innerText = "Success!";
+			message_text.style.display = "flex";
+			setTimeout(() => {message_text.style.display = "none";}, 5000);
 		}
 
 		getProfile();

@@ -28,7 +28,6 @@ td {
 }
 
 square {
-	margin-left: 1vh;
 	width: 3vh;
 	height: 3vh;
 	border: 1.5px solid var(--content);

@@ -38,7 +38,6 @@
 body {
 	margin: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 	height: 100vh;
-	font-family: Archivo, ui-sans-serif, system-ui, sans-serif;
 	accent-color: var(--accent);
 	background-color: var(--fill);
 }
@@ -49,6 +48,7 @@ body {
 	border: unset;
 	outline: unset;
 	font-size: 2vh;
+	font-family: Archivo, ui-sans-serif, system-ui, sans-serif;
 	text-decoration: unset;
 	box-sizing: border-box;
 	color: var(--content);
@@ -120,12 +120,22 @@ dialog {
 }
 
 output {
+	margin-bottom: 1vh;
 	padding: 2vh;
+	width: clamp(250px, 60vh, 500px);
+	display: none;
+	overflow-wrap: break-word;
 	font-size: 1.5vh;
 	font-family: Chivo Mono, ui-monospace, monospace;
 	border: 2px solid var(--level-1);
+	border-radius: 1vh;
 	color: var(--level-1);
-	background-color: color-mix(in srgb, var(--level-1) 50%, var(--fill) 50%);
+	background-color: color-mix(in srgb, var(--level-1) 25%, var(--fill) 100%);
+
+	&:before {
+		content: "⚠️";
+		margin-right: 1vh;
+	}
 }
 
 div {
@@ -140,20 +150,36 @@ div {
 input {
 	width: clamp(250px, 60vw, 500px);
 	padding: 1vh;
+	font-family: Chivo Mono, ui-monospace, monospace;
+	font-weight: 100;
 	border-radius: 1vh;
 	background-color: var(--fill);
 	cursor: pointer;
+	&::placeholder {
+		font-family: Archivo, ui-sans-serif, system-ui, sans-serif;
+		color: color-mix(in srgb, var(--content) 25%, var(--fill) 75%)
+	}
 }
 
 button {
 	padding: 1vh;
 	border-radius: 1vh;
+	font-family: Chivo Mono, ui-monospace, monospace;
+	font-variant-ligatures: none;
 	background-color: var(--accent);
 	cursor: pointer;
 }
 
+.close {
+	padding: initial;
+	font-family: initial;
+	color: var(--fill);
+	background-color: initial;
+	border-radius: initial;
+}
+
 .brand {
-	margin: none;
+	margin: inherit !important;
 }
 
 .logo {
@@ -170,7 +196,11 @@ button {
 }
 
 @media screen and (min-width: 600px) {
-	button:hover, input:hover {
-		background-color: var(--fill);
+	button:hover {
+		background-color: color-mix(in srgb, var(--accent) 90%, var(--content) 10%);
+	}
+
+	input:hover {
+		background-color: color-mix(in srgb, var(--fill) 60%, var(--secondary) 40%);
 	}
 }

@@ -42,9 +42,13 @@ async function signUp() {
 
 	if (error) {
 		message_text.innerText = error.message;
+		message_text.style.display = "flex";
+		setTimeout(() => {message_text.style.display = "none";}, 5000);
 	} else {
 		message_text.innerText = "Success!";
+		message_text.style.display = "flex";
 		checkSessionStatus();
+		setTimeout(() => {message_text.style.display = "none";}, 5000);
 	}
 }
 
@@ -58,6 +62,8 @@ async function signIn() {
 
 	if (error) {
 		message_text.innerText = error.message;
+		message_text.style.display = "flex";
+		setTimeout(() => {message_text.style.display = "none";}, 5000);
 	} else {
 		window.location.href = "dashboard.html";
 	}	
