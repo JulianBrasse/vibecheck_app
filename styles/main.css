@@ -159,6 +159,11 @@ input {
 	}
 }
 
+input[type="range"]:hover {
+	padding: 0vh;
+	background-color: var(--fill);
+}
+
 .button {
 	padding: 1vh;
 	border-radius: 1vh;

@@ -23,7 +23,8 @@
 		<script type="module" src="/scripts/main.js" defer></script>
 		<script type="module" src="/scripts/auth.js" defer></script>
 		<script type="module" src="/scripts/profile.js" defer></script>
-		
+		<script type="module" src="/scripts/vibecheck.js" defer></script>
+
 		<title>VibeCheck Dashboard</title>
 		<meta name="application-name" content="VibeCheck" />
 		<meta name="description" content="Track your happiness with VibeCheck and get suggestions on how to improve it!" />
@@ -52,9 +53,9 @@
 				<h3>DailyVibe</h3>
 					<div class="flex-column">
 						<label for="happiness_scale">How happy are you?</label>
-						<input type="range" id="happiness_scale" name="happiness_scale" min="0" max="10">
+						<input id="happiness_scale" type="range" min="0" max="40">
 					</div>
-				<button class="button">Submit</button>
+				<button id="submit_vibe_button" class="button">Submit</button>
 			</section>
 			<section>
 				<h3>HappinessHelp</h3>

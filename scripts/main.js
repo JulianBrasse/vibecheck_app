@@ -1,4 +1,5 @@
 import { supabase } from "/scripts/supabase.js";
+
 const auth_dialog = document.getElementById("auth_dialog");
 const profile_dialog = document.getElementById("profile_dialog");
 const auth_open_button = document.getElementById("auth_open_button");
