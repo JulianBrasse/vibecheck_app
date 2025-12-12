@@ -74,6 +74,10 @@ h6 {
 	font-size: 1.5vh;
 }
 
+span {
+	font-size: inherit;
+}
+
 header {
 	padding: 2vh;
 	display: flex;
