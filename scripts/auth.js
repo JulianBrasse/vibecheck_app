@@ -24,7 +24,7 @@ if (signup_button) {
 		if (error) {
 			message_text.innerText = error.message;
 		} else {
-			message_text.innerText = "Success. Log in again!";
+			message_text.innerText = "success";
 		}
 	});
 }
@@ -60,14 +60,14 @@ if (logout_button) {
 // 6. Protect the Dashboard (Check if user is logged in)
 async function checkUser() {
 	const { data: { session } } = await supabase.auth.getSession();
-	const currentPage = window.location.pathname;
+	const current_page = window.location.pathname;
 
 	// If on dashboard but no session, kick back to login
-	if (currentPage.includes("dashboard.html") && !session) {
+	if (current_page.includes("dashboard.html") && !session) {
 		window.location.href = "index.html";
 	}
 	// If on index but we HAVE a session, send to dashboard
-	if ((currentPage.includes("index.html") || currentPage === "/") && session) {
+	if ((current_page.includes("index.html") || current_page === "/") && session) {
 		window.location.href = "dashboard.html";
 	}
 }
