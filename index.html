@@ -36,12 +36,12 @@
 	</head>
 	<body>
 		<header>
-			<div>
+			<div class="no-margin">
 				<img class="logo" src="/content/symbol.svg" alt="Vibey our smiley face icon.">
 				<h1>VibeCheck</h1>
 			</div>
 			<nav>
-				<button commandfor="auth_dialog" command="show-modal">Enter Dashboard</button>
+				<button class="button" commandfor="auth_dialog" command="show-modal">Enter Dashboard</button>
 			</nav>
 		</header>
 		<main>
@@ -60,8 +60,8 @@
 				<input type="text" id="name_input" placeholder="First Name" />
 			</div>
 			<div>
-				<button id="sign_in_button">Sign In</button>
-				<button id="sign_up_button">Sign Up</button>
+				<button class="button" id="sign_in_button">Sign In</button>
+				<button class="button" id="sign_up_button">Sign Up</button>
 			</div>
 			<button class="close" commandfor="auth_dialog" command="close">Close</button>
 		</dialog>

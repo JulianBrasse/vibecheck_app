@@ -133,7 +133,7 @@ output {
 	background-color: color-mix(in srgb, var(--level-1) 25%, var(--fill) 100%);
 
 	&:before {
-		content: "⚠️";
+		content: "ℹ️";
 		margin-right: 1vh;
 	}
 }
@@ -150,21 +150,20 @@ div {
 input {
 	width: clamp(250px, 60vw, 500px);
 	padding: 1vh;
-	font-family: Chivo Mono, ui-monospace, monospace;
-	font-weight: 100;
 	border-radius: 1vh;
 	background-color: var(--fill);
 	cursor: pointer;
+
 	&::placeholder {
-		font-family: Archivo, ui-sans-serif, system-ui, sans-serif;
 		color: color-mix(in srgb, var(--content) 25%, var(--fill) 75%)
 	}
 }
 
-button {
+.button {
 	padding: 1vh;
 	border-radius: 1vh;
 	font-family: Chivo Mono, ui-monospace, monospace;
+	font-weight: bold;
 	font-variant-ligatures: none;
 	background-color: var(--accent);
 	cursor: pointer;
@@ -178,8 +177,8 @@ button {
 	border-radius: initial;
 }
 
-.brand {
-	margin: inherit !important;
+.no-margin {
+	margin: unset !important;
 }
 
 .logo {
@@ -202,5 +201,9 @@ button {
 
 	input:hover {
 		background-color: color-mix(in srgb, var(--fill) 60%, var(--secondary) 40%);
+	}
+
+	.name {
+		display: none;
 	}
 }

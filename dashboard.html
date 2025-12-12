@@ -36,20 +36,20 @@
 	</head>
 	<body>
 		<header>
-			<div class="brand">
+			<div class="no-margin">
 				<img class="logo" src="/content/symbol.svg" alt="Vibey our smiley face icon.">
-				<h1>VibeCheck</h1>
+				<h1 class="name">VibeCheck</h1>
 			</div>
 			<nav>
-				<button commandfor="profile_dialog" command="show-modal">Profile</button>
-				<button id="sign_out_button">Sign Out</button>
+				<button class="button" commandfor="profile_dialog" command="show-modal">Profile</button>
+				<button class="button" id="sign_out_button">Sign Out</button>
 			</nav>
 		</header>
 		<main>
 			<h2>Good morning <span id="name_text"></span>!</h2>
 			<section>
 				<h3>DailyVibe</h3>
-				<button>Submit</button>
+				<button class="button">Submit</button>
 			</section>
 			<section>
 				<h3>HappinessHelp</h3>
@@ -198,7 +198,7 @@
 				<input type="text" id="name_input" placeholder="First Name" />
 			</div>
 			<div>
-				<button id="save_button">Save</button>
+				<button class="button" id="save_button">Save</button>
 			</div>
 			<button class="close" commandfor="profile_dialog" command="close">Close</button>
 		</dialog>

@@ -6,6 +6,7 @@ table {
 	border: 1.5px solid var(--content);
 	border-spacing: 1vh;
 	border-radius: 1vh;
+    background-color: var(--fill);
     scroll-snap-align: start;
 }
 

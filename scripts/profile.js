@@ -12,8 +12,13 @@ async function getProfile() {
 	const email = user?.email;
 	const name = user?.user_metadata?.full_name;
 
-	email_input.value = email;
+	if(email) {
+		email_input.value = email;
+	}
+
+	if(name) {
 	name_input.value = name;
+	}
 
 	name_text.innerText = name || "user";
 }
