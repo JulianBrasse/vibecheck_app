@@ -6,6 +6,7 @@ table {
 	border: 1.5px solid var(--content);
 	border-spacing: 1vh;
 	border-radius: 1vh;
+    scroll-snap-align: start;
 }
 
 th {
@@ -32,4 +33,18 @@ square {
 	height: 3vh;
 	border: 1.5px solid var(--content);
 	border-radius: 0.5vh; 
+}
+
+.history {
+	overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.legend {
+	align-items: center;
+    font-family: Chivo Mono, ui-monospace, monospace;
+}
+
+.level-1 {
+    background-color: var(--level-1);
 }

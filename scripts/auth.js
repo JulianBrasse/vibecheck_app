@@ -29,11 +29,15 @@ async function signUp() {
 	const { data, error } = await supabase.auth.signUp({
 		email: email,
 		password: password,
-		options: {
+		data: {
+			full_name: name
+		}
+/*		options: {
 			data: {
 			full_name: name
 			}
 		}
+*/
 	});
 
 	if (error) {

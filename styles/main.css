@@ -5,28 +5,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-	font-family: Archivo, ui-sans-serif, system-ui, sans-serif;
 	--accent: #9ed;
 	--primary: #def;
-	--secondary: #ecf;
+	--secondary: #9bf;
 	--content: #000;
 	--fill: #fff;
+
+    --level-1: #f00;
+    --level-2: #fc0;
+    --level-3: #ff0;
+    --level-4: #cf0;
+    --level-5: #6f0;
+    --level-6: #0c0;
+
 	overscroll-behavior: none;
 	user-select: none;
 }
 
 @media (prefers-color-scheme: dark) {
-:root {
-	--primary: #012;
-	--secondary: #123;
-	--content: #fff;
-	--fill: #666;
+	:root {
+		--primary: #36a;
+		--secondary: #024;
+		--content: #fff;
+		--fill: #345;
+	}
+
+	button {
+		color: var(--content);
 	}
 }
 
 body {
 	margin: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 	height: 100vh;
+	font-family: Archivo, ui-sans-serif, system-ui, sans-serif;
 	accent-color: var(--accent);
 	background-color: var(--fill);
 }
@@ -40,6 +52,7 @@ body {
 	text-decoration: unset;
 	box-sizing: border-box;
 	color: var(--content);
+	scrollbar-width: none;
 }
 
 main {
@@ -106,6 +119,15 @@ dialog {
 	background-color: var(--secondary);
 }
 
+output {
+	padding: 2vh;
+	font-size: 1.5vh;
+	font-family: Chivo Mono, ui-monospace, monospace;
+	border: 2px solid var(--level-1);
+	color: var(--level-1);
+	background-color: color-mix(in srgb, var(--level-1) 50%, var(--fill) 50%);
+}
+
 div {
 	display: flex;
 	gap: 1vh;
@@ -116,6 +138,7 @@ div {
 }
 
 input {
+	width: clamp(250px, 60vw, 500px);
 	padding: 1vh;
 	border-radius: 1vh;
 	background-color: var(--fill);
@@ -129,6 +152,10 @@ button {
 	cursor: pointer;
 }
 
+.brand {
+	margin: none;
+}
+
 .logo {
 	margin-right: 1vh;
 	height: 3.5vh;
@@ -138,12 +165,8 @@ button {
 	flex-direction: column;
 }
 
-.history {
-	overflow: scroll;
-}
-
-.legend {
-	align-items: center;
+::backdrop {
+	background-color: #0003;
 }
 
 @media screen and (min-width: 600px) {
