@@ -2,7 +2,7 @@ import { supabase } from "/scripts/supabase.js";
 
 const happiness_scale = document.getElementById("happiness_scale");
 const submit_vibe_button = document.getElementById("submit_vibe_button");
-const happiness_scale_number = document.getElementById("happiness_scale_number)";
+const happiness_scale_number = document.getElementById("happiness_scale_number");
 
 async function submitVibe() {
 	const happiness_level = (happiness_scale.valueAsNumber / 4);
