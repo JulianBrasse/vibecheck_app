@@ -16,7 +16,7 @@ async function showVibe() {
 	if(happiness_level === 10) {
 		happiness_scale_number.innerText = happiness_level + "/10";
 	} else {
-		happiness_scale_number.innerText = " " + happiness_level + "/10";
+		happiness_scale_number.innerText = "0" + happiness_level + "/10";
 	}
 }
 

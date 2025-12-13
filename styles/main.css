@@ -205,7 +205,9 @@ textarea {
 }
 
 #happiness_scale_number {
+	width: 8vh;
 	padding: 0.5vh;
+	display: flex;
 	border-radius: 2vh;
 	font-family: Chivo Mono, ui-monospace, monospace;
 	background-color: var(--accent);
