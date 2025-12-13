@@ -13,7 +13,11 @@ async function submitVibe() {
 
 async function showVibe() {
 	const happiness_level = happiness_scale.valueAsNumber;
-	happiness_scale_number.innerText = happiness_level + " / 10";
+	if(happiness_level === 10) {
+		happiness_scale_number.innerText = happiness_level + "/10";
+	} else {
+		happiness_scale_number.innerText = " " + happiness_level + "/10";
+	}
 }
 
 if (submit_vibe_button) {
