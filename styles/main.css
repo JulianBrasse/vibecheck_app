@@ -142,6 +142,7 @@ output {
 div {
 	display: flex;
 	gap: 1vh;
+	align-items: center;
 
 	&:not(:last-child) {
 		margin-bottom: 1vh;
@@ -193,6 +194,12 @@ input[type="range"]:hover {
 
 .flex-column {
 	flex-direction: column;
+}
+
+#happiness_scale_number {
+	padding: 0.5vh;
+	border-radius: 2vh;
+	background-color: var(--accent);
 }
 
 ::backdrop {
