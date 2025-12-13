@@ -3,10 +3,12 @@ import { supabase } from "/scripts/supabase.js";
 const happiness_scale = document.getElementById("happiness_scale");
 const submit_vibe_button = document.getElementById("submit_vibe_button");
 const happiness_scale_number = document.getElementById("happiness_scale_number");
+const happiness_reason_input = document.getElementById("happiness_reason");
 
 async function submitVibe() {
 	const happiness_level = happiness_scale.valueAsNumber;
-	alert(happiness_level);
+	const happiness_reason = happiness_reason_input.value;
+	alert("level: " + happiness_level + " for reason: " + happiness_reason);
 }
 
 async function showVibe() {
