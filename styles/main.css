@@ -149,7 +149,7 @@ div {
 	}
 }
 
-input {
+input, textarea {
 	width: clamp(250px, 60vw, 500px);
 	padding: 1vh;
 	border-radius: 1vh;
@@ -196,6 +196,10 @@ input[type="range"]:hover {
 	flex-direction: column;
 }
 
+.align-start {
+	align-items: flex-start;
+}
+
 #happiness_scale_number {
 	padding: 0.5vh;
 	border-radius: 2vh;
@@ -211,7 +215,7 @@ input[type="range"]:hover {
 		background-color: color-mix(in srgb, var(--accent) 90%, var(--content) 10%);
 	}
 
-	input:hover {
+	input:hover, textarea:hover {
 		background-color: color-mix(in srgb, var(--fill) 60%, var(--secondary) 40%);
 	}
 

@@ -51,11 +51,17 @@
 			<h2>Good morning <span id="name_text"></span>!</h2>
 			<section>
 				<h3>DailyVibe</h3>
-					<div class="flex-column">
+					<div class="flex-column align-start">
 						<label for="happiness_scale">How happy are you?</label>
 						<div>
-							<input id="happiness_scale" type="range" min="0" max="40">
+							<input id="happiness_scale" type="range" min="0" max="10">
 							<p id="happiness_scale_number">5/10</p>
+						</div>
+					</div>
+					<div class="flex-column align-start">
+						<label for="happiness_reason">Why are you feeling this way?</label>
+						<div>
+							<textarea id="happiness_reason"></textarea>
 						</div>
 					</div>
 				<button id="submit_vibe_button" class="button">Submit</button>

@@ -5,12 +5,12 @@ const submit_vibe_button = document.getElementById("submit_vibe_button");
 const happiness_scale_number = document.getElementById("happiness_scale_number");
 
 async function submitVibe() {
-	const happiness_level = (happiness_scale.valueAsNumber / 4);
+	const happiness_level = happiness_scale.valueAsNumber;
 	alert(happiness_level);
 }
 
 async function showVibe() {
-	const happiness_level = (happiness_scale.valueAsNumber / 4);
+	const happiness_level = happiness_scale.valueAsNumber;
 	happiness_scale_number.innerText = happiness_level + " / 10";
 }
 
